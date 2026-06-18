@@ -4,7 +4,7 @@
 [![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)](https://docs.python.org/3.9/)
 [![Model](https://img.shields.io/badge/Backbone-EfficientNetB5-green.svg)]()
 
-คลังโค้ดสำหรับการเทรนต่อ (Continuation Training) และปรับละเอียด (Fine-tuning) โมเดล **EfficientNetB5** แบบ Single-task บนชุดข้อมูลภาพอัลตราซาวด์ทางการแพทย์ **USAI10K** โดยเริ่มต้นจากโมเดล Unlearn Checkpoint ดั้งเดิมที่มีความแม่นยำสูงถึง **89%** เพื่อจำแนกโรคและสิ่งผิดปกติหลัก 15 คลาสผ่านหัวพยากรณ์ `prediction_layer`
+คลังโค้ดสำหรับการเทรนต่อ (Continuation Training) และปรับละเอียด (Fine-tuning) โมเดล **EfficientNetB5** แบบ Single-task บนชุดข้อมูลภาพอัลตราซาวด์ทางการแพทย์ **USAI10K** โดยเริ่มต้นจากโมเดล Unlearn Checkpoint ดั้งเดิมที่มีความแม่นยำสูงถึง **89%** เพื่อจำแนกโรคและสิ่งผิดปกติหลัก 15 คลาสผ่าน `prediction_layer`
 
 ---
 
