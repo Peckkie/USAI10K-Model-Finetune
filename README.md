@@ -1,7 +1,7 @@
 # 🩺 USAI10K Model Fine-Tuning Project
 
-[![TensorFlow 2.6+](https://img.shields.io/badge/TensorFlow-2.6%2B-orange.svg)](https://www.tensorflow.org/guide/keras/save_and_serialize)
-[![Python 3.6](https://img.shields.io/badge/Python-3.6-blue.svg)](https://docs.python.org/3.6/)
+[![TensorFlow 2.10+](https://img.shields.io/badge/TensorFlow-2.10%2B-orange.svg)](https://www.tensorflow.org/guide/keras/save_and_serialize)
+[![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)](https://docs.python.org/3.9/)
 [![Model](https://img.shields.io/badge/Backbone-EfficientNetB5-green.svg)]()
 
 คลังโค้ดสำหรับการเทรนต่อ (Continuation Training) และปรับละเอียด (Fine-tuning) โมเดล **EfficientNetB5** แบบ Single-task บนชุดข้อมูลภาพอัลตราซาวด์ทางการแพทย์ **USAI10K** โดยเริ่มต้นจากโมเดล Unlearn Checkpoint ดั้งเดิมที่มีความแม่นยำสูงถึง **89%** เพื่อจำแนกโรคและสิ่งผิดปกติหลัก 15 คลาสผ่านหัวพยากรณ์ `prediction_layer`
@@ -34,7 +34,6 @@
 ## 💻 การตั้งค่าระบบและการใช้งาน (Environment & Execution)
 
 ### 1. การเตรียมสภาพแวดล้อม (Environment Setup)
-สคริปต์นี้ทำงานบนระบบปฏิบัติการที่มีการจำลองสภาพแวดล้อมผ่าน Miniconda/Anaconda (แนะนำ Python 3.6 และ TensorFlow ยุคก่อนหน้าเพื่อความเข้ากันได้ของน้ำหนักโมเดล)
 
 ### 📋 All Installation Commands
 
