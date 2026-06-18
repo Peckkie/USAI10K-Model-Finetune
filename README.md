@@ -36,9 +36,26 @@
 ### 1. การเตรียมสภาพแวดล้อม (Environment Setup)
 สคริปต์นี้ทำงานบนระบบปฏิบัติการที่มีการจำลองสภาพแวดล้อมผ่าน Miniconda/Anaconda (แนะนำ Python 3.6 และ TensorFlow ยุคก่อนหน้าเพื่อความเข้ากันได้ของน้ำหนักโมเดล)
 
-```bash
-# เปิดใช้งาน Environment ของคุณ
-conda activate bitnet-unlearn-env
+### 📋 All Installation Commands
 
-# ติดตั้งไลบรารีที่จำเป็นสำหรับการจัดการข้อมูลและการประมวลผลภาพ
-pip install pandas numpy opencv-python matplotlib scikit-learn
+```bash
+# 1. สร้าง Environment ใหม่ด้วย Python 3.9
+conda create -n usai10k-python3.9 python=3.9 -y
+
+# 2. เปิดใช้งาน Environment
+conda activate usai10k-python3.9
+
+# 3. ติดตั้งเครื่องมือคอมไพเลอร์พื้นฐาน (C++ / GCC) สำหรับระบบ Linux
+conda install -c conda-forge gxx_linux-64 gcc_linux-64 -y
+
+# 4. อัปเดตเครื่องมือติดตั้ง pip ให้เป็นเวอร์ชันล่าสุด
+pip install --upgrade pip
+
+# 5. ติดตั้ง TensorFlow 2.10.1 และไลบรารีประมวลผลข้อมูล/รูปภาพทั้งหมด
+pip install tensorflow==2.10.1 pandas numpy opencv-python matplotlib scikit-learn jupyter ipykernel
+
+# 6. บังคับย้อนเวอร์ชัน NumPy กลับไปเป็นซีรีส์ 1.x เพื่อแก้ปัญหาโครงสร้างอะเรย์พัง (สำคัญมาก ⚠️)
+pip install "numpy<2" --force-reinstall
+
+# 7. ลงทะเบียน Environment นี้เข้าสู่ระบบของ Jupyter Kernel
+python -m ipykernel install --user --name usai10k-python3.9 --display-name "usai10k-python3.9"
